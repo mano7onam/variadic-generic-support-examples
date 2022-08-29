@@ -13,7 +13,10 @@ Time = NewType('Time', int)
 Batch = NewType('Batch', int)
 Channels = NewType('Channels', int)
 Env = NewType('Env', int)
-T = TypeVar('T')
+
 Ts = TypeVarTuple('Ts')
 Ts1 = TypeVarTuple('Ts1')
 Ts2 = TypeVarTuple('Ts1')
+
+T = TypeVar('T')
+DType = TypeVar('DType')

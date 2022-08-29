@@ -1,8 +1,6 @@
 from typing import Generic, TypeVarTuple, Tuple, NewType
 
-Shape = TypeVarTuple('Shape')
-Height = NewType('Height', int)
-Width = NewType('Width', int)
+from array_declaration import Shape, Width, Height
 
 
 class Array(Generic[*Shape]):
@@ -17,10 +15,12 @@ class Array(Generic[*Shape]):
 shape = (Height(480), Width(640))
 x: Array[Height, Width] = Array(shape)
 
+
 def pointwise_multiply(
     x: Array[*Shape],
     y: Array[*Shape]
 ) -> Array[*Shape]: ...
+
 
 shape = (Height(480),)
 x: Array[Height] = Array(shape)
