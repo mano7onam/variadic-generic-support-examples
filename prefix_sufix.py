@@ -8,6 +8,7 @@ def prefix_tuple(
     y: Tuple[*Ts]
 ) -> Tuple[T, *Ts]: ...
 
+
 def suffix_tuple(
     y: Tuple[*Ts],
     x: T
