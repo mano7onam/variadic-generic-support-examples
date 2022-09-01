@@ -12,7 +12,7 @@ class Array(Generic[*Shape]):
     def __init__(self, shape: Tuple[*Shape]):
         self._shape: Tuple[*Shape] = shape
 
-    def add_axis_prefix_suffix(self, t1: T1, t2: T2, t3: T3, t4: T4) -> Array[T1, T2, *Shape, T3, T4]: ...
+    def add_axis_prefix_suffix(self, t1: T1, t2: T2, t3: T3, t4: T4) -> Array[T3, T2, *Shape, T1, T4]: ...
 
 
 shape = (42, '42')

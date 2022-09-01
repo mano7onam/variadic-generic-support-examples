@@ -1,7 +1,7 @@
 from typing import TypeVar, TypeVarTuple, Callable, Tuple
 
 T = TypeVar('T')
-Ts = TypeVarTuple('Ts1')
+Ts = TypeVarTuple('Ts')
 
 
 def foo(f: Callable[[int, *Ts, T], Tuple[T, *Ts]]) -> Tuple[str, *Ts, int, T]: ...

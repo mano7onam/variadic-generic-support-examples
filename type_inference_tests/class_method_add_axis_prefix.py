@@ -12,6 +12,6 @@ class Array(Generic[*Shape]):
     def add_axis_prefix(self, t: T) -> Array[T, *Shape]: ...
 
 
-shape = (42, 42)
-arr: Array[int, int] = Array(shape)
-expr = arr.add_axis_prefix(42)
+shape = (42, True)
+arr: Array[int, bool] = Array(shape)
+expr = arr.add_axis_prefix('')

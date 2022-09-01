@@ -7,5 +7,7 @@ class A(Generic[*Ts]):
     def __init__(self, value: Tuple[int, *Ts]) -> None:
         self.field: Tuple[int, *Ts] = value
 
-    def foo(self) -> None:
-        expr = self.field
+
+tpl = (42, 1.1, True, ['42'])
+a = A(tpl)
+expr = a.field
