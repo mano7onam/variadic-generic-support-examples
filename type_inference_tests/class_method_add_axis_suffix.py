@@ -13,5 +13,5 @@ class Array(Generic[*Shape]):
 
 
 shape = ([42], True)
-arr: Array[int, bool] = Array(shape)
+arr: Array[list[int], bool] = Array(shape)
 expr = arr.add_axis_suffix('42')
